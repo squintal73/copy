@@ -1,0 +1,57 @@
+.container {
+    display: grid;
+    justify-items: center;
+    flex-direction: row;
+    border: 2px red;
+
+}
+.box-frases { 
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    overflow :auto; 
+    float: none; 
+    background:#f9fafb; 
+    box-shadow: 2px 2px 2px 2px  #8d8989; 
+    border-radius: 3px; 
+    padding: 5px; 
+
+}
+.box-frases .texto   { 
+    background: rgb(37, 35, 35);
+    color: white;
+    font-size: 7px;
+    border-radius: 10px;
+    width: 350px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+.box-frases .btnCopi { 
+    background:#4856c0; 
+    color:#202020; 
+    float: center; 
+    border: none; 
+    border-radius: 3px; 
+    cursor: pointer;
+}
+.btnCopi:active { 
+    background: #98e39d; 
+    color: #fff; 
+}
+.copy {
+    background:#4856c0; 
+    color:#f6f3f3; 
+    font-size: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    float:right; 
+    border:none; 
+    border-radius:3px; 
+    cursor: pointer;
+}
+.copy:active {
+    background: #c1c4d4; 
+    color: #141414; 
+}

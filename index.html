@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Copy & Past</title>
+</head>
+<body>
+<div class="container">
+    <h3>Copia de texto</h3>
+        <div class="box-frases">
+             <div>
+                <button class="copy" type="button" onclick="CopyTexto('1')">Copy</button>  
+                <pre class="texto" id="1">
+
+    /** Inserir texto dentro de um elemento com o ID "meuElemento" **/
+    let elemento = document.getElementById("meuElemento");
+    let range = document.createRange();
+
+    /** Seleciona todo o conteúdo do elemento **/
+    range.selectNodeContents(elemento); 
+    let novoTexto = document.createTextNode("Novo texto inserido");
+
+    /** Remove o conteúdo selecionado **/
+    range.deleteContents(); 
+
+    /** Insere o novo texto no lugar do conteúdo removido **/
+    range.insertNode(novoTexto); 
+        </pre>
+            </div>
+        </div>
+        <div> <h3>Copia de Texto</h3></div>
+       
+    <script src="./script.js" type="text/javascript"></script>
+</div>
+</body>
+</html>
